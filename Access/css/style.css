@@ -1,0 +1,255 @@
+/* style.css */
+
+/* Estilo general del cuerpo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #0B0F1A; /*Fondo azul muy oscuro */
+    margin: 0; /* Sin márgenes */
+    padding: 10px; /*relleno */
+    color: #ffffff; /* Color de texto por defecto */
+    text-align: center;
+}
+
+.Ejercicios {
+    margin: 20px auto; /* Centra horizontalmente y da margen externo */
+    background-color: #e9ecef; /* Color de fondo */
+    color: black; /* Texto negro */
+    width: 60%; /* Ancho opcional */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    border: 2px solid #064606; /* Borde verde claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Centra el texto */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #d1e7dd;
+  }
+
+main{
+    text-align: center;
+}
+.frame {
+    border: 2px solid #064606; /* Borde verde claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    background-color: #e9ecef; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 20px; /* Margen externo */
+    text-align: center;
+    color: black
+}
+
+a{
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    color: #a5daa5
+}
+
+a:hover{
+    color: #a5daa5
+}
+.Formulario{
+    text-align: center;
+}
+
+.Formulario a{
+    color: #00ff00;
+}
+.Formulario a:hover{
+    color: #a5daa5
+
+}
+
+.Usuario{
+    text-align: center;
+}
+
+
+.Usuario a{
+    color: #00ff00;
+}
+
+.Usuario a:hover{
+    color: #a5daa5
+
+}
+nav ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%; /* Sin relleno */
+    background-color: #064606;
+    display: flex; /* Usar Flexbox */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear verticalmente */
+}
+
+nav ul img {
+    max-width: 7.5%; /* Ajustar el tamaño de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-right: 15px; /* Margen derecho para separar de los enlaces */
+}
+
+nav ul li {
+    margin: 0 15px; /* Margen entre elementos */
+}
+
+nav ul li a {
+    color: #ffffff; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Relleno para los enlaces */
+}
+
+/* Estilo para el logo */
+.logo {
+    text-align: center; /* Centrar el logo */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-size: 48px; /* Tamaño de fuente del logo */
+    color: #00ff00; /* Color verde claro para el logo */
+}
+
+.Bienvenida{
+    text-align: center; /* Centrar el texto de bienvenida */
+    font-size: 24px; /* Tamaño de fuente del texto de bienvenida */
+    color: #00ff00; /* Color verde claro para el texto de bienvenida */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    width: 100%; /* Ancho del contenedor al 100% */
+    padding: 20px; /* Relleno */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    text-align: center;
+}
+
+/* Estilo para el encabezado */
+header {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #1A1F2E; /* Color de fondo del encabezado */
+    color: #064606; /* Color del texto del encabezado */
+    padding: 10px 0; /* Relleno superior e inferior */
+    text-align: center; /* Centrar texto */
+}
+
+p{
+    text-align: center; /* Centrar texto */
+    font-size: 18px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color verde claro para el párrafo */
+
+}
+
+.Aspectos1, .Aspectos2 {
+    display: flex;
+    flex: 1 1 calc(33.333% - 20px); /* Acomoda cada div dentro de un 33% de la fila */
+  }
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #1A1F2E; /* Color de fondo del pie de página */
+    color: #00ff00; /* Color del texto del pie de página */
+    text-align: center; /* Centrar texto */
+    bottom: 0; /* Fijar al fondo */
+    width: 100%; /* Ancho completo */
+    left: 0;
+}
+.Contexto{
+    text-align: center; /* Centrar texto */
+    font-size: 18px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color verde claro para el párrafo */
+    background-color: #242b3d;
+    border-radius: 20px
+}
+/* Estilo para los formularios */
+form {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    margin: 20px auto; /* Centrar el formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+form input {
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 10px; /* Relleno */
+    border: 1px solid #064606; /* Borde verde claro para los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button {
+    padding: 10px; /* Relleno */
+    background: #064606; /* Color de fondo verde claro para el botón */
+    color: #0B0F1A; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+}
+
+form button:hover {
+    background: #064606; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+/* Estilos específicos para el formulario de login */
+/* Estilos específicos para el formulario de login */
+.Contenido {
+    /*  Color de texto degradado */
+    min-height: 100vh; /* Ocupa toda la altura del viewport */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    background-image: url('../Img/Fondo-Login.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column; /* Si hay un footer debajo */
+}
+
+#text-login{
+    text-align: center;
+}
+#login-container{
+    /* color: linear-gradient(to right, #01182e, #ffffff);  */
+    color: black;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.login-form {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-color: #01182e; /* Color de fondo específico para el formulario de login */
+    padding: 20px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.login-form input {
+    border: 1px solid #007bff; /* Borde azul para los campos de entrada */
+}
+
+.login-form button {
+    background-color: #007bff; /* Color de fondo azul para el botón */
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
