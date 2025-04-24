@@ -1,6 +1,3 @@
-/* style.css */
-
-/* Estilo general del cuerpo */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,248 +5,431 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fuente general */
-    background-color: #0B0F1A; /*Fondo azul muy oscuro */
-    margin: 0; /* Sin márgenes */
-    padding: 10px; /*relleno */
-    color: #ffffff; /* Color de texto por defecto */
+    font-family: Arial, sans-serif;
+    background-color: #0B0F1A;
+    margin: 0;
+    padding: 10px;/* Estilo para el color del texto del cuerpo de la página */
+    color: #ffffff;
     text-align: center;
 }
 
 .Ejercicios {
-    margin: 20px auto; /* Centra horizontalmente y da margen externo */
-    background-color: #e9ecef; /* Color de fondo */
-    color: black; /* Texto negro */
-    width: 60%; /* Ancho opcional */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-    border: 2px solid #064606; /* Borde verde claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Relleno interno */
-    text-align: center; /* Centra el texto */
+    margin: 20px auto;
+    background-color: #e9ecef;
+    color: black;
+    width: 60%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #064606;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  }
+}
 
-  th, td {
+th, td {
     border: 1px solid #ccc;
     padding: 10px;
-  }
+}
 
-  th {
+th {
     background-color: #d1e7dd;
-  }
+}
 
-main{
+main {
     text-align: center;
 }
+
 .frame {
-    border: 2px solid #064606; /* Borde verde claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Relleno interno */
-    background-color: #e9ecef; /* Color de fondo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: 20px; /* Margen externo */
+    border: 2px solid #064606;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
     text-align: center;
-    color: black
+    color: black;
 }
 
-a{
+a {
     text-align: center;
     border-radius: 100px;
     padding: 20px;
-    color: #a5daa5
+    color: #a5daa5;
 }
 
-a:hover{
-    color: #a5daa5
+a:hover {
+    color: #a5daa5;
 }
-.Formulario{
+
+.Formulario {
     text-align: center;
 }
 
-.Formulario a{
+.Formulario a {
     color: #00ff00;
 }
-.Formulario a:hover{
-    color: #a5daa5
 
+.Formulario a:hover {
+    color: #a5daa5;
 }
 
-.Usuario{
+.Usuario {
     text-align: center;
 }
 
-
-.Usuario a{
+.Usuario a {
     color: #00ff00;
 }
 
-.Usuario a:hover{
-    color: #a5daa5
-
+.Usuario a:hover {
+    color: #a5daa5;
 }
+
 nav ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none; /* Sin viñetas */
+    list-style: none;
     padding: 0;
     margin-left: 10%;
-    margin-right: 10%; /* Sin relleno */
+    margin-right: 10%;
     background-color: #064606;
-    display: flex; /* Usar Flexbox */
-    justify-content: space-between; /* Espacio entre elementos */
-    align-items: center; /* Alinear verticalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul img {
-    max-width: 7.5%; /* Ajustar el tamaño de la imagen */
-    height: auto; /* Mantener la proporción de la imagen */
-    margin-right: 15px; /* Margen derecho para separar de los enlaces */
+    max-width: 7.5%;
+    height: auto;
+    margin-right: 15px;
 }
 
 nav ul li {
-    margin: 0 15px; /* Margen entre elementos */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffffff; /* Color del texto del enlace */
-    text-decoration: none; /* Sin subrayado */
-    padding: 10px; /* Relleno para los enlaces */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
 }
 
-/* Estilo para el logo */
 .logo {
-    text-align: center; /* Centrar el logo */
-    margin: 20px 0; /* Margen superior e inferior */
-    font-size: 48px; /* Tamaño de fuente del logo */
-    color: #00ff00; /* Color verde claro para el logo */
+    text-align: center;
+    margin: 20px 0;
+    font-size: 48px;
+    color: #00ff00;
 }
 
-.Bienvenida{
-    text-align: center; /* Centrar el texto de bienvenida */
-    font-size: 24px; /* Tamaño de fuente del texto de bienvenida */
-    color: #00ff00; /* Color verde claro para el texto de bienvenida */
+.Bienvenida {
+    text-align: center;
+    font-size: 24px;
+    color: #00ff00;
 }
 
-/* Estilo para el contenedor principal */
 .container {
-    width: 100%; /* Ancho del contenedor al 100% */
-    padding: 20px; /* Relleno */
-    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
 }
 
-/* Estilo para el encabezado */
 header {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #1A1F2E; /* Color de fondo del encabezado */
-    color: #064606; /* Color del texto del encabezado */
-    padding: 10px 0; /* Relleno superior e inferior */
-    text-align: center; /* Centrar texto */
+    background: #1A1F2E;
+    color: #064606;
+    padding: 10px 0;
+    text-align: center;
 }
 
-p{
-    text-align: center; /* Centrar texto */
-    font-size: 18px; /* Tamaño de fuente del párrafo */
-    color: #ffffff; /* Color verde claro para el párrafo */
-
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .Aspectos1, .Aspectos2 {
     display: flex;
-    flex: 1 1 calc(33.333% - 20px); /* Acomoda cada div dentro de un 33% de la fila */
-  }
+    flex: 1 1 calc(33.333% - 20px);
+}
 
-/* Estilo para el pie de página */
 footer {
-    background-color: #1A1F2E; /* Color de fondo del pie de página */
-    color: #00ff00; /* Color del texto del pie de página */
-    text-align: center; /* Centrar texto */
-    bottom: 0; /* Fijar al fondo */
-    width: 100%; /* Ancho completo */
+    background-color: #1A1F2E;
+    color: #00ff00;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
     left: 0;
 }
-.Contexto{
-    text-align: center; /* Centrar texto */
-    font-size: 18px; /* Tamaño de fuente del párrafo */
-    color: #ffffff; /* Color verde claro para el párrafo */
+
+.Contexto {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
     background-color: #242b3d;
-    border-radius: 20px
+    border-radius: 20px;
 }
-/* Estilo para los formularios */
+
 form {
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Colocar elementos en columna */
-    margin: 20px auto; /* Centrar el formulario */
-    max-width: 400px; /* Ancho máximo del formulario */
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 400px;
 }
 
 form input {
-    margin-bottom: 10px; /* Margen inferior */
-    padding: 10px; /* Relleno */
-    border: 1px solid #064606; /* Borde verde claro para los campos de entrada */
-    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #064606;
+    border-radius: 5px;
 }
 
 form button {
-    padding: 10px; /* Relleno */
-    background: #064606; /* Color de fondo verde claro para el botón */
-    color: #0B0F1A; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    padding: 10px;
+    background: #064606;
+    color: #0B0F1A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 form button:hover {
-    background: #064606; /* Color de fondo más oscuro al pasar el ratón */
+    background: #064606;
 }
 
-/* Estilos específicos para el formulario de login */
-/* Estilos específicos para el formulario de login */
 .Contenido {
-    /*  Color de texto degradado */
-    min-height: 100vh; /* Ocupa toda la altura del viewport */
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     background-image: url('../Img/Fondo-Login.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-direction: column; /* Si hay un footer debajo */
+    flex-direction: column;
 }
 
-#text-login{
+#text-login {
     text-align: center;
 }
-#login-container{
-    /* color: linear-gradient(to right, #01182e, #ffffff);  */
+
+#login-container {
     color: black;
 }
-h1{
+
+h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
 .login-form {
     padding-top: 50%;
     padding-bottom: 50%;
-    background-color: #01182e; /* Color de fondo específico para el formulario de login */
-    padding: 20px; /* Relleno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #01182e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .login-form input {
-    border: 1px solid #007bff; /* Borde azul para los campos de entrada */
+    border: 1px solid #007bff;
 }
 
 .login-form button {
-    background-color: #007bff; /* Color de fondo azul para el botón */
+    background-color: #007bff;
 }
 
 .login-form button:hover {
-    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+    background-color: #0056b3;
+}
+
+/* === Estilos Responsive === */
+@media screen and (max-width: 1024px) {
+    .Ejercicios, .frame {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul img {
+        max-width: 20%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Ejercicios, .frame, .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Aspectos1, .Aspectos2 {
+        flex-direction: column;
+    }
+
+    .login-form {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .Bienvenida {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p, .Contexto, .Bienvenida {
+        font-size: 16px;
+    }
+
+    form, .login-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul img {
+        max-width: 30%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .Usuario, .Formulario {
+        font-size: 14px;
+    }
+}
+
+/* Estilo general del header */
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #1A1F2E;
+    color: #064606;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Título principal */
+header h1 {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 2em;
+    color: darkgreen;
+}
+
+/* Contenedor general del navbar */
+.navbar {
+    background-color: #033303;
+    padding: 10px 0;
+}
+
+/* Estructura horizontal y distribución de espacios */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo del logo */
+.nav-logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* Enlaces centrales */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a,
+.nav-logout a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover,
+.nav-logout a:hover {
+    text-decoration: underline;
+    color: #a5daa5;
+}
+
+/* Cerrar sesión */
+.nav-logout {
+    white-space: nowrap;
+}
+
+/* Estilos responsivos para el navbar */
+@media screen and (max-width: 1024px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links a, .nav-logout a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .nav-logo img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-logo img {
+        height: 100%;
+    }
 }

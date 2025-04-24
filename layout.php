@@ -11,7 +11,8 @@ if (!isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <title>Aurora</title>
-    <link rel="stylesheet" type="text/css" href="Access/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Access/css/style.css"> <!-- Estilo CSS -->
+    <link rel="icon" href="Access/Img/Icono.jpeg" type="image/jpeg"> <!-- Icono de la pestaña -->
 </head>
 <body>
     <?php include 'Layout/header.php'; ?> <!-- Incluye el encabezado -->

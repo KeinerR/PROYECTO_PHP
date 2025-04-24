@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="icon" href="Access/Img/Icono.jpeg" type="image/jpeg"> <!-- Icono de la pestaña -->
     <link rel="stylesheet" type="text/css" href="Access/css/style.css">
 </head>
 <body class = 'Contenido'>
