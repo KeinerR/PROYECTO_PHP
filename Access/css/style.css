@@ -1,435 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap'); /* Importa la fuente Lora desde Google Fonts */
+
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100%; /* Establece la altura completa para html y body */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0B0F1A;
-    margin: 0;
-    padding: 10px;/* Estilo para el color del texto del cuerpo de la página */
-    color: #ffffff;
-    text-align: center;
-}
-
-.Ejercicios {
-    margin: 20px auto;
-    background-color: #e9ecef;
-    color: black;
-    width: 60%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border: 2px solid #064606;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-th {
-    background-color: #d1e7dd;
-}
-
-main {
-    text-align: center;
-}
-
-.frame {
-    border: 2px solid #064606;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #e9ecef;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    text-align: center;
-    color: black;
-}
-
-a {
-    text-align: center;
-    border-radius: 100px;
-    padding: 20px;
-    color: #a5daa5;
-}
-
-a:hover {
-    color: #a5daa5;
-}
-
-.Formulario {
-    text-align: center;
-}
-
-.Formulario a {
-    color: #00ff00;
-}
-
-.Formulario a:hover {
-    color: #a5daa5;
-}
-
-.Usuario {
-    text-align: center;
-}
-
-.Usuario a {
-    color: #00ff00;
-}
-
-.Usuario a:hover {
-    color: #a5daa5;
-}
-
-nav ul {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    padding: 0;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #064606;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul img {
-    max-width: 7.5%;
-    height: auto;
-    margin-right: 15px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.logo {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 48px;
-    color: #00ff00;
-}
-
-.Bienvenida {
-    text-align: center;
-    font-size: 24px;
-    color: #00ff00;
-}
-
-.container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
 header {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #1A1F2E;
-    color: #064606;
-    padding: 10px 0;
-    text-align: center;
+    background-image: url('../Img/Fondo-Login.jpeg'); /* Establece una imagen de fondo en el encabezado */
+    font-family: 'Lora', serif; /* Aplica la fuente Lora al encabezado */
+    background: #1A1F2E; /* Color de fondo del encabezado (puede sobrescribir la imagen si no se carga) */
+    color: #007bff; /* Color del texto en el encabezado */
+    padding: 10px 0; /* Relleno vertical de 10px */
+    text-align: center; /* Centra el texto dentro del encabezado */
 }
-
+.navbar {
+    background-color: #090D19; /* Fondo oscuro para la barra de navegación */
+    padding: 10px 0; /* Relleno vertical */
+}
+.nav-content {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenido de la navbar */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 20px; /* Relleno horizontal */
+}
+.nav-logo img {
+    height: 135px; /* Altura fija de la imagen del logo */
+    width: 100%; /* Ancho completo del contenedor */
+}
+.nav-links {
+    display: flex; /* Organiza los enlaces en línea */
+    gap: 40px; /* Espacio entre enlaces */
+}
+.nav-links a,
+.nav-logout a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: 500; /* Peso de fuente medio */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente sans-serif */
+    padding: 10px; /* Relleno alrededor del enlace */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.nav-links a:hover,
+.nav-logout a:hover {
+    text-decoration: underline; /* Subraya al pasar el cursor */
+    color: #a5daa5; /* Cambia el color al pasar el cursor */
+}
+.nav-logout {
+    white-space: nowrap; /* Evita que el texto haga salto de línea */
+}
+body {
+    font-family: 'Lora', serif; /* Aplica la fuente Lora al cuerpo */
+    background-color: #0B0F1A; /* Color de fondo oscuro */
+    margin: 0; /* Elimina el margen */
+    padding: 10px; /* Relleno interno */
+    color: #ffffff; /* Color de texto blanco */
+    text-align: center; /* Centra el texto */
+}
+.Ejercicios {
+    margin: 20px auto; /* Márgenes verticales y centrado horizontal */
+    background-color: #e9ecef; /* Fondo claro */
+    color: black; /* Texto negro */
+    width: 60%; /* Ancho del contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Centrado del texto */
+}
+table {
+    width: 100%; /* Ocupa todo el ancho */
+    border-collapse: collapse; /* Colapsa los bordes */
+    margin-top: 20px; /* Separación superior */
+}
+th, td {
+    border: 1px solid #ccc; /* Bordes grises */
+    padding: 10px; /* Relleno interno */
+}
+th {
+    background-color: #d1e7dd; /* Fondo claro para encabezados de tabla */
+}
+main {
+    text-align: center; /* Centra el contenido */
+}
+.frame {
+    border: 2px solid #110f6b; /* Borde azul oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    background-color: #e9ecef; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    margin: 20px; /* Márgenes externos */
+    text-align: center; /* Centra el contenido */
+    color: black; /* Texto negro */
+}
+a {
+    text-align: center; /* Centra el texto del enlace */
+    border-radius: 100px; /* Bordes muy redondeados */
+    padding: 20px; /* Relleno interno */
+    color: #007bff; /* Color azul para los enlaces */
+}
+a:hover {
+    color: #a5daa5; /* Color al pasar el cursor */
+}
+.Formulario {
+    text-align: center; /* Centra el contenido */
+}
+.Formulario a {
+    color: #007bff; /* Color azul de enlaces */
+}
+.Formulario a:hover {
+    color: #a5daa5; /* Cambio de color al pasar el cursor */
+}
+.Usuario {
+    text-align: center; /* Centrado */
+}
+.Usuario a {
+    color: #007bff; /* Enlaces azules */
+}
+.Usuario a:hover {
+    color: #a5daa5; /* Cambio al pasar el mouse */
+}
+nav ul {
+    font-family: 'Lora', serif; /* Fuente Lora */
+    list-style: none; /* Elimina viñetas */
+    padding: 0; /* Sin relleno */
+    margin-left: 10%; /* Margen izquierdo */
+    margin-right: 10%; /* Margen derecho */
+    background-color: #110f6b; /* Fondo azul oscuro */
+    display: flex; /* Flexbox para organizar */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Alineación vertical */
+}
+nav ul img {
+    max-width: 7.5%; /* Tamaño máximo relativo */
+    height: auto; /* Altura automática */
+    margin-right: 15px; /* Margen derecho */
+}
+nav ul li {
+    margin: 0 15px; /* Margen horizontal */
+}
+nav ul li a {
+    color: #ffffff; /* Enlaces blancos */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Relleno */
+    font-size: 100px; /* Tamaño exageradamente grande (posible error) */
+}
+.logo {
+    text-align: center; /* Centrado */
+    margin: 20px 0; /* Márgenes verticales */
+    font-size: 48px; /* Tamaño de fuente */
+    color: #007bff; /* Color azul */
+}
+.Bienvenida {
+    text-align: center; /* Centrado */
+    font-size: 24px; /* Tamaño del texto */
+    color: #007bff; /* Azul */
+}
+.container {
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Relleno */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    text-align: center; /* Centrado */
+}
 p {
-    text-align: center;
-    font-size: 18px;
-    color: #ffffff;
+    text-align: center; /* Centrado */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #ffffff; /* Texto blanco */
 }
-
 .Aspectos1, .Aspectos2 {
-    display: flex;
-    flex: 1 1 calc(33.333% - 20px);
+    margin-top: 30px; /* Separación superior */
+    display: flex; /* Flexbox */
+    flex: 1 1 calc(33.333% - 20px); /* Tamaño de cada sección */
 }
-
 footer {
-    background-color: #1A1F2E;
-    color: #00ff00;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    background-color: #1A1F2E; /* Fondo oscuro */
+    color: #007bff; /* Texto azul */
+    text-align: center; /* Centrado */
+    bottom: 0; /* Posición inferior */
+    width: 100%; /* Ancho total */
+    left: 0; /* Alineado a la izquierda */
 }
-
 .Contexto {
-    text-align: center;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #242b3d;
-    border-radius: 20px;
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    gap: 2rem; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permite ajuste de líneas */
+    background-color: #1e2635; /* Fondo gris azulado */
+    color: white; /* Texto blanco */
+    padding: 2rem; /* Relleno */
+    text-align: center; /* Centrado */
 }
-
+.columna {
+    flex: 1 1 300px; /* Cada columna ocupa mínimo 300px */
+}
+.columna img {
+    width: 100%; /* Ancho total del contenedor */
+    max-width: 300px; /* Límite máximo */
+    margin-top: 1rem; /* Margen superior */
+    border-radius: 8px; /* Bordes redondeados */
+}
 form {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    max-width: 400px;
+    display: flex; /* Flexbox vertical */
+    flex-direction: column; /* Dirección columna */
+    margin: 20px auto; /* Centrando el formulario */
+    max-width: 400px; /* Ancho máximo */
 }
-
 form input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #064606;
-    border-radius: 5px;
+    margin-bottom: 10px; /* Separación entre campos */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #110f6b; /* Borde azul oscuro */
+    border-radius: 5px; /* Bordes redondeados */
 }
-
 form button {
-    padding: 10px;
-    background: #064606;
-    color: #0B0F1A;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px; /* Relleno */
+    background: #007bff; /* Fondo azul */
+    color: #0B0F1A; /* Texto oscuro */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
 }
-
 form button:hover {
-    background: #064606;
+    background: #110f6b; /* Color al pasar el mouse */
 }
-
 .Contenido {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../Img/Fondo-Login.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-direction: column;
+    min-height: 100vh; /* Altura mínima igual al viewport */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-image: url('../Img/Fondo-Login.jpeg'); /* Fondo con imagen */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    flex-direction: column; /* Dirección de columna */
 }
-
 #text-login {
-    text-align: center;
+    text-align: center; /* Centrado */
 }
-
 #login-container {
-    color: black;
+    color: black; /* Texto negro */
 }
-
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    font-family: 'Lora', serif; /* Fuente Lora */
+    text-align: center; /* Centrado */
 }
-
 .login-form {
-    padding-top: 50%;
-    padding-bottom: 50%;
-    background-color: #01182e;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 50%; /* Espaciado superior grande (posiblemente incorrecto) */
+    padding-bottom: 50%; /* Espaciado inferior grande */
+    background-color: #01182e; /* Fondo oscuro */
+    padding: 20px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
 }
-
 .login-form input {
-    border: 1px solid #007bff;
+    border: 1px solid #007bff; /* Borde azul */
 }
-
 .login-form button {
-    background-color: #007bff;
+    background-color: #007bff; /* Fondo azul */
 }
-
 .login-form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
 }
 
+/* Media queries aquí en adelante */
 /* === Estilos Responsive === */
 @media screen and (max-width: 1024px) {
     .Ejercicios, .frame {
-        width: 80%;
+        width: 80%; /* Establece el ancho de .Ejercicios y .frame al 80% del contenedor */
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        flex-direction: column; /* Cambia la dirección de los elementos del navbar a columna */
+        align-items: flex-start; /* Alinea los elementos al principio (izquierda) */
+        padding: 10px; /* Añade un poco de relleno */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Añade espacio vertical entre los elementos del navbar */
     }
 
     nav ul img {
-        max-width: 20%;
-        margin-bottom: 10px;
+        max-width: 20%; /* Limita el tamaño de la imagen del logo al 20% de su tamaño original */
+        margin-bottom: 10px; /* Añade espacio debajo de la imagen */
     }
 }
 
 @media screen and (max-width: 768px) {
     .Ejercicios, .frame, .container {
-        width: 90%;
-        padding: 10px;
+        width: 90%; /* Establece el ancho de estos elementos al 90% */
+        padding: 10px; /* Añade relleno adicional */
     }
 
     .Aspectos1, .Aspectos2 {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección de las columnas a fila */
     }
 
     .login-form {
-        width: 90%;
+        width: 90%; /* Establece el ancho del formulario de login al 90% */
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
+        flex-direction: column; /* Cambia la dirección de los elementos del navbar a columna */
+        align-items: center; /* Alinea los elementos al centro */
+        padding: 10px 0; /* Añade relleno superior e inferior */
     }
 
     .logo {
-        font-size: 32px;
+        font-size: 32px; /* Reduce el tamaño de la fuente del logo */
     }
 
     .Bienvenida {
-        font-size: 18px;
+        font-size: 18px; /* Reduce el tamaño de la fuente para la bienvenida */
     }
 }
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 24px;
+        font-size: 24px; /* Reduce el tamaño del encabezado h1 */
     }
 
     p, .Contexto, .Bienvenida {
-        font-size: 16px;
+        font-size: 16px; /* Ajusta el tamaño de la fuente para estos elementos */
     }
 
     form, .login-form {
-        width: 100%;
-        padding: 10px;
+        width: 100%; /* Ajusta el ancho del formulario y el formulario de login al 100% */
+        padding: 10px; /* Añade relleno */
     }
 
     nav ul img {
-        max-width: 30%;
+        max-width: 30%; /* Limita el tamaño de la imagen del logo al 30% */
     }
 
     nav ul li a {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 10px; /* Reduce el tamaño de la fuente de los enlaces en la navbar */
+        padding: 8px; /* Ajusta el relleno de los enlaces */
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 24px; /* Reduce el tamaño del logo */
     }
 
     .Usuario, .Formulario {
-        font-size: 14px;
+        font-size: 14px; /* Ajusta el tamaño de fuente para estos elementos */
     }
-}
-
-/* Estilo general del header */
-header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #1A1F2E;
-    color: #064606;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Título principal */
-header h1 {
-    margin: 0;
-    padding: 15px 0;
-    font-size: 2em;
-    color: darkgreen;
-}
-
-/* Contenedor general del navbar */
-.navbar {
-    background-color: #033303;
-    padding: 10px 0;
-}
-
-/* Estructura horizontal y distribución de espacios */
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Estilo del logo */
-.nav-logo img {
-    height: 60px;
-    width: auto;
-}
-
-/* Enlaces centrales */
-.nav-links {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-links a,
-.nav-logout a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.nav-links a:hover,
-.nav-logout a:hover {
-    text-decoration: underline;
-    color: #a5daa5;
-}
-
-/* Cerrar sesión */
-.nav-logout {
-    white-space: nowrap;
 }
 
 /* Estilos responsivos para el navbar */
 @media screen and (max-width: 1024px) {
     .nav-content {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Cambia la dirección de los elementos de la navbar a columna */
+        gap: 10px; /* Añade espacio entre los elementos */
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia los enlaces a columna */
+        align-items: center; /* Centra los enlaces */
     }
 }
 
 @media screen and (max-width: 768px) {
     .nav-links a, .nav-logout a {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 14px; /* Reduce el tamaño de la fuente de los enlaces */
+        padding: 8px; /* Ajusta el relleno de los enlaces */
     }
 
     .nav-logo img {
-        height: 50px;
+        height: 50px; /* Limita la altura del logo */
     }
 }
 
 @media screen and (max-width: 480px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Ajusta el tamaño del encabezado h1 */
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 20px; /* Añade espacio entre los enlaces */
     }
 
     .nav-logo img {
-        height: 100%;
+        height: 100%; /* Ajusta la altura del logo al 100% de su contenedor */
     }
 }

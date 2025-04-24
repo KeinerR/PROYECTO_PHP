@@ -4,7 +4,7 @@
          <p>
              Un viaje transformador hacia el autodescubrimiento, el crecimiento interior y la conexión auténtica con otros. Inspira, despierta y transforma.
          </p>
-             <a href="#">Contáctanos</a>
+             <a href='layout.php?page=form'>Contáctanos</a>
          </div>
          <p>
              &copy; <?php echo date("Y"); ?> Project Aurora. Todos los derechos reservados.

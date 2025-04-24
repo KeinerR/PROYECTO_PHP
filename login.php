@@ -8,7 +8,7 @@
 </head>
 <body class = 'Contenido'>
     <div id = 'login-container'>
-        <h1 id = 'text-login'>Login</h1>
+        <h1 id = 'text-login'>Iniciar Sesión</h1>
         <form class = 'login-form' method="POST" action="index.php">
             <input type="text" name="username" placeholder="Usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>
