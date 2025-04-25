@@ -6,7 +6,6 @@ html, body {
     padding: 0; /* Elimina el relleno por defecto */
 }
 header {
-    background-image: url('../Img/Fondo-Login.jpeg'); /* Establece una imagen de fondo en el encabezado */
     font-family: 'Lora', serif; /* Aplica la fuente Lora al encabezado */
     background: #1A1F2E; /* Color de fondo del encabezado (puede sobrescribir la imagen si no se carga) */
     color: #007bff; /* Color del texto en el encabezado */
