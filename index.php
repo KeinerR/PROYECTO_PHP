@@ -1,4 +1,7 @@
 <?php
+
+require_once 'setup/create_database.php';
+
 session_start(); // <- Esto es lo que te falta
 header('location: login.php'); // <- Redirigir a login.php
 

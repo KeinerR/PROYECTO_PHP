@@ -11,9 +11,8 @@
 
             <!-- Enlaces principales -->
             <div class="nav-links">
-                <a href="layout.php?page=main">Página Principal</a>
+                <a href="layout.php?page=main">Usuarios</a>
                 <a href="layout.php?page=actividades">Actividades</a>
-                <a href="layout.php?page=form">Mas Información</a>
             </div>
 
             <!-- Cerrar sesión -->
