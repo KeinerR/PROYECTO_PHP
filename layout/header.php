@@ -6,8 +6,11 @@
         <div class="nav-content">
             <!-- Logo -->
             <div class="nav-logo">
-                <img src="Access/img/Logo.png" alt="Logo">
+                <a href="layout.php?page=main">
+                    <img src="Access/img/Logo.png" alt="Logo"><!-- ícono home de Font Awesome -->
+                </a>
             </div>
+
 
             <!-- Enlaces principales -->
             <div class="nav-links">

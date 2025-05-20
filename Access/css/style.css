@@ -44,7 +44,7 @@ header {
 .nav-links a:hover,
 .nav-logout a:hover {
     text-decoration: underline; /* Subraya al pasar el cursor */
-    color: #a5daa5; /* Cambia el color al pasar el cursor */
+    color: azure; /* Cambia el color al pasar el cursor */
 }
 .nav-logout {
     white-space: nowrap; /* Evita que el texto haga salto de línea */
