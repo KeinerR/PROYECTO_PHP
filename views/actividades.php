@@ -1,3 +1,9 @@
+<?php
+require_once 'ActividadesModel.php'; // Asegúrate de que la ruta es correcta
+$actividadModel = new ActividadesModel();
+$actividades = $actividadModel->getAll(); // Obtener datos reales desde la base
+?>
+
 <div class="Ejercicios">
     <h2>Lista de Actividades</h2>
 
@@ -8,23 +14,13 @@
             <th>Descripción</th>
             <th>Tiempo de ejecución</th>
         </tr>
-        <?php
-        $actividades = [
-            ['actividad' => 'Meditación guiada', 'nivel' => 'Básico', 'descripcion' => 'Sesión guiada para enfocar la mente y relajar el cuerpo', 'tiempo' => '15 minutos'],
-            ['actividad' => 'Respiración consciente', 'nivel' => 'Básico', 'descripcion' => 'Ejercicio de respiración profunda y pausada', 'tiempo' => '10 minutos'],
-            ['actividad' => 'Baño de sonido', 'nivel' => 'Intermedio', 'descripcion' => 'Uso de cuencos tibetanos para alinear la energía', 'tiempo' => '30 minutos'],
-            ['actividad' => 'Escritura introspectiva', 'nivel' => 'Avanzado', 'descripcion' => 'Reflexión escrita sobre emociones y pensamientos', 'tiempo' => '20 minutos'],
-            ['actividad' => 'Caminata consciente', 'nivel' => 'Intermedio', 'descripcion' => 'Paseo en silencio, prestando atención plena al entorno', 'tiempo' => '25 minutos']
-        ];
-
-        foreach ($actividades as $actividad) {
-            echo "<tr>";
-            echo "<td>{$actividad['actividad']}</td>";
-            echo "<td>{$actividad['nivel']}</td>";
-            echo "<td>{$actividad['descripcion']}</td>";
-            echo "<td>{$actividad['tiempo']}</td>";
-            echo "</tr>";
-        }
-        ?>
+        <?php foreach ($actividades as $actividad): ?>
+            <tr>
+                <td><?= htmlspecialchars($actividad['nombre']) ?></td>
+                <td><?= htmlspecialchars($actividad['nivel_nombre']) ?></td>
+                <td><?= htmlspecialchars($actividad['descripcion']) ?></td>
+                <td><?= htmlspecialchars($actividad['tiempo_estimado']) ?> minutos</td>
+            </tr>
+        <?php endforeach; ?>
     </table>
 </div>
