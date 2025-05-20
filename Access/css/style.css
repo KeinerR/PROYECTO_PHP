@@ -11,6 +11,7 @@ header {
     color: #007bff; /* Color del texto en el encabezado */
     padding: 10px 0; /* Relleno vertical de 10px */
     text-align: center; /* Centra el texto dentro del encabezado */
+    padding-top: 0;
 }
 .navbar {
     background-color: rgb(148, 192, 192); /* Fondo oscuro para la barra de navegación */
