@@ -15,7 +15,7 @@ try {
     $pdo->exec("
         CREATE TABLE IF NOT EXISTS Rol_Usuario (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            nombre VARCHAR(50) NOT NULL
+            nombre VARCHAR(50) NOT NULL UNIQUE
         );
     ");
 
@@ -23,7 +23,7 @@ try {
     $pdo->exec("
         CREATE TABLE IF NOT EXISTS Tipo_Documento (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            nombre VARCHAR(50) NOT NULL
+            nombre VARCHAR(50) NOT NULL UNIQUE
         );
     ");
 
@@ -49,7 +49,7 @@ try {
     $pdo->exec("
         CREATE TABLE IF NOT EXISTS Nivel_Actividades (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            nombre VARCHAR(50) NOT NULL
+            nombre VARCHAR(50) NOT NULL UNIQUE
         );
     ");
 
